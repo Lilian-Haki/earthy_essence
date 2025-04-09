@@ -71,6 +71,7 @@ img.animated.pulse {
 .navbar {
     padding: 11px 0 !important;
     height: 85px;
+    background-color:#22422b;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -99,7 +100,7 @@ img.animated.pulse {
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         padding: 0 15px;
-        background: var(--bs-primary);
+        background-color:#22422b;
     }
 
     .navbar .navbar-nav .nav-link  {
@@ -134,7 +135,7 @@ img.animated.pulse {
     margin-top: -85px;
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/bgp.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -145,8 +146,8 @@ img.animated.pulse {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+    background: rgba(18, 109, 46, 0.1);
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 63% 100%);
 }
 
 .hero-header .container {
@@ -158,6 +159,22 @@ img.animated.pulse {
     color: var(--bs-light);
 }
 
+.hero-header .container .circle2{
+    width: 50px;
+    height: 50px;
+    background-color: #104b0e;
+    border-radius: 50%;
+    margin-top: -160px;
+    margin-left: 360px;
+}
+.hero-header .container .circle3{
+    width: 400px;
+    height: 400px;
+    background-color: #16350e;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: -500px;
+}
 
 /*** Feature ***/
 .feature-item::before {
@@ -167,53 +184,24 @@ img.animated.pulse {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+    background: rgba(13, 63, 9, 0.1);
+    clip-path: polygon(35% 0, 100% 0, 10% 100%, 63% 100%);
 }
-
+.feature-item{
+    background-image: url(../img//bgp.png);
+}
 .feature-item .border {
     position: relative;
-    border-color: rgba(255, 255, 255, .2) !important;
+    border-color: rgba(1, 19, 6, 0.2) !important;
     z-index: 1;
 }
 
-
-/*** Deal ***/
-.deal {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
-
-.deal::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.deal .bg-white {
-    position: relative;
-    z-index: 1;
-}
-
-.deal .cdt span {
-    display: block;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 200;
-    text-transform: capitalize;
-}
 
 
 /*** How To Use ***/
 .how-to-use {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/bgp.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -257,7 +245,7 @@ img.animated.pulse {
 /*** Testimonial ***/
 .testimonial {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/bgp.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -269,7 +257,6 @@ img.animated.pulse {
     top: 0;
     left: 0;
     background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
 }
 
 .testimonial .testimonial-carousel {
@@ -311,69 +298,13 @@ img.animated.pulse {
     background: var(--bs-dark);
 }
 
-
-/*** Blog ***/
-.blog-item {
-    transition: .1s;
+/* Contact */
+.contact-info-item{
+background-image: url(../img/bgp.png);
 }
-
-.blog-item:hover {
-    border-width: 0 !important;
-    box-shadow: 0 0 35px rgba(144, 188, 121, .25);
+.contact-btn{
+    background-color: #16350e;
 }
-
-.blog-item:hover a.btn {
-    color: var(--bs-white);
-    background: var(--bs-primary);
-}
-
-
-/*** Contact ***/
-.contact-info-item::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.contact-info-item .border {
-    position: relative;
-    border-color: rgba(255, 255, 255, .2) !important;
-    z-index: 1;
-}
-
-
-/*** Newsletter ***/
-.newsletter {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
-
-.newsletter::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.newsletter .container {
-    position: relative;
-    z-index: 1;
-}
-
-.newsletter .form-control {
-    background: rgba(255, 255, 255, .3);
-}
-
 
 /*** Footer ***/
 .footer .btn.btn-link {
